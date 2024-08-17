@@ -58,7 +58,7 @@
   </path>
   
   <!-- Larger placeholder circle for the image -->
-  <circle cx="520" cy="160" r="100" fill="#f0f0f0"/>
+  <circle cx="519" cy="160" r="100" fill="#f0f0f0"/>
   
   <!-- Text elements -->
   <text x="30" y="50" fill="#FFFFFF" font-family="'Trebuchet MS', sans-serif" font-size="24" font-weight="bold">
