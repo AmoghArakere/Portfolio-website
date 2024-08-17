@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200">
+  <style>
+    .edu-text { transition: all 0.3s ease; }
+    .edu-text:hover { font-size: 12px; font-weight: bold; }
+    .edu-details { transition: all 0.3s ease; }
+    .edu-details:hover { font-size: 10px; }
+    .highlight { transition: all 0.3s ease; }
+    .highlight:hover { font-size: 10px; font-weight: bold; }
+  </style>
+  
+  <rect width="100%" height="100%" fill="#000000"/>
+  
+  <!-- Timeline -->
+  <line x1="300" y1="20" x2="300" y2="180" stroke="rgb(232, 2, 98)" stroke-width="2"/>
+  
+  <!-- MS Ramaiah Institute of Technology -->
+  <circle cx="300" cy="40" r="3" fill="rgb(232, 2, 98)"/>
+  <text x="310" y="35" fill="#FFFFFF" font-family="Arial" font-size="10" class="edu-text">MS Ramaiah Institute of Technology</text>
+  <text x="310" y="47" fill="#FFFFFF" font-family="Arial" font-size="8" class="edu-details">2021-2025 | B.E. in Computer Science and Engineering</text>
+  <text x="310" y="59" fill="rgb(232, 2, 98)" font-family="Arial" font-size="8" class="highlight">GPA: 9.05</text>
+  
+  <!-- Vidya Mandir Ind PU College -->
+  <circle cx="300" cy="100" r="3" fill="rgb(232, 2, 98)"/>
+  <text x="290" y="95" fill="#FFFFFF" font-family="Arial" font-size="10" text-anchor="end" class="edu-text">Vidya Mandir Ind PU College</text>
+  <text x="290" y="107" fill="#FFFFFF" font-family="Arial" font-size="8" text-anchor="end" class="edu-details">2019-2021 | State Board, PCME</text>
+  <text x="290" y="119" fill="rgb(232, 2, 98)" font-family="Arial" font-size="8" text-anchor="end" class="highlight">XII Percentage: 98.16%</text>
+  
+  <!-- Bhoruka English School -->
+  <circle cx="300" cy="160" r="3" fill="rgb(232, 2, 98)"/>
+  <text x="310" y="155" fill="#FFFFFF" font-family="Arial" font-size="10" class="edu-text">Bhoruka English School</text>
+  <text x="310" y="167" fill="#FFFFFF" font-family="Arial" font-size="8" class="edu-details">2008-2019 | State Board</text>
+  <text x="310" y="179" fill="rgb(232, 2, 98)" font-family="Arial" font-size="8" class="highlight">X Percentage: 94.5%</text>
+</svg>

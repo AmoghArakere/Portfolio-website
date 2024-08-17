@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 300">
+  <defs>
+    <!-- Black background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Animation for floating particles -->
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+    </filter>
+    
+    <!-- Updated gradient for the swirl -->
+    <linearGradient id="swirl" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#DB7093;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C71585;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)"/>
+  
+  <!-- Animated background particles with maroonish-pinkish colors -->
+  <g filter="url(#goo)">
+    <circle cx="80" cy="80" r="20" fill="#FF1493">
+      <animate attributeName="cy" values="80;240;80" dur="7s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="80;560;80" dur="10s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="560" cy="240" r="15" fill="#C71585">
+      <animate attributeName="cy" values="240;80;240" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="560;80;560" dur="12s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="320" cy="160" r="25" fill="#DB7093">
+      <animate attributeName="cy" values="160;320;160" dur="9s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="320;480;320" dur="11s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="160" cy="120" r="18" fill="#FF69B4">
+      <animate attributeName="cy" values="120;240;120" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="160;480;160" dur="13s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="480" cy="200" r="22" fill="#FFB6C1">
+      <animate attributeName="cy" values="200;40;200" dur="11s" repeatCount="indefinite" />
+      <animate attributeName="cx" values="480;160;480" dur="14s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- Colorful swirl -->
+  <path d="M480,160 Q530,20 580,160 T600,160" fill="none" stroke="url(#swirl)" stroke-width="10">
+    <animate attributeName="d" 
+             dur="10s" 
+             repeatCount="indefinite"
+             values="M480,160 Q530,20 580,160 T600,160;
+                     M480,160 Q530,290 580,160 T600,160;
+                     M480,160 Q530,20 580,160 T600,160"/>
+  </path>
+  
+  <!-- Larger placeholder circle for the image -->
+  <circle cx="520" cy="160" r="100" fill="#f0f0f0"/>
+  <img src="" >
+  <!-- Text elements -->
+  <text x="30" y="50" fill="#FFFFFF" font-family="'Trebuchet MS', sans-serif" font-size="24" font-weight="bold">
+    Hey, I am Amogh Nagaraj
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
+  </text>
+  <text x="30" y="90" fill="#FFFFFF" font-family="'Trebuchet MS', sans-serif" font-size="12">
+    <tspan x="30" dy="0">Welcome to my Portfolio - a showcase of my personal and professional</tspan>
+    <tspan x="30" dy="15">journey, a blend of Technology, Art and Life.</tspan>
+    <tspan x="30" dy="15">Thanks for dropping by, let's dive in!</tspan>
+  </text>
+</svg>
